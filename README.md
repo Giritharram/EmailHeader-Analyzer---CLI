@@ -25,7 +25,7 @@ Give any one of the following arguments
  -URLinfo          -> URL Information   
  ```
  
- After Trying all the above arguments, try out the below ones
+ After Trying all of the above arguments, try out the below ones
  
  ```
  -IPpassive        -> Passive DNS Information
