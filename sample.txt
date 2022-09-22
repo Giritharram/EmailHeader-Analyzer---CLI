@@ -1,0 +1,304 @@
+Delivered-To: giritharram005@gmail.com
+Received: by 2002:a5d:4a01:0:0:0:0:0 with SMTP id m1csp596551wrq;
+        Fri, 15 Jul 2022 18:20:27 -0700 (PDT)
+X-Google-Smtp-Source: AGRyM1sQ097XasoPCUXaYyv0q7isp5mmw2KjwUOCszY83Y53rOsjD1VnN7FWrdNBXSbYGX+nNxZ4
+X-Received: by 2002:a05:622a:213:b0:31e:c569:220e with SMTP id b19-20020a05622a021300b0031ec569220emr14389739qtx.436.1657934427554;
+        Fri, 15 Jul 2022 18:20:27 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1657934427; cv=none;
+        d=google.com; s=arc-20160816;
+        b=1Ky8er8YZs/pm10b5knTMEm842ktis2IMeogrcHpSu3yP+bX5VGfm3j4/R0sYioHan
+         BteJvT+8Qhd6uTOpfCKfz+i8UJ8WtflJrI8tpHmpLeswP1p0CFeisiG4iQHRRisBRVEJ
+         b96X3jH8EFLWdNZAEzoAr8rBdxdAqibWoPO4/wd5p18m2CyTMzYiyMyDxzA4w6ow68Zx
+         GO0y0L2KVnzKhQG2Grc3VPIopmzLamRKWQAD4kVnwtGICnUkrZ2Pb0Qo0ij4Lh7xIu5P
+         BiM9opGodDkYwar0CKJ+cptcvQVfGUqcmrroakb2S2tt8VKv4Xxq4Q/QmXJhwDk2bjsq
+         /YCQ==
+         125.66.77.254
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:content-transfer-encoding:subject:to:from:message-id
+         :date:dkim-signature;
+        bh=HiBYfg0W2cBk211w4B+qSvbqH0crylFZWjZXjb/u6cs=;
+        b=AmBUYgWQrt7v0I9LcMdpV2YnOIQpM+29W4Y8DXi9Rxtgdzy4kCHbMgj1f+8TmG+dB+
+         E/NsGmEDghZL8xmapE5+Dt6Uh0MqszRvzE3IHyAdFdJpDMj/ywKZaAlkiAMqhbnlU0ge
+         NJVNsNMBA1+io4r+PqZrMq8nJRvobrGBULzKxnVFeVhtZbagAcy6UoWhqg6McJEeqXxX
+         qLPSKeAwRwXOaDsV/NAo00mn14Mq+0LjjSBJaxTBHmGlM9rvN1URki/hzCksP/a1qqAG
+         UdAzXx5hJ9nRb1hIFSqSY3qpFkmHDJNMCrRfjoALPOqS4VaqOD+WareTds1NdtGwnquR
+         5Y/w==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@jxmmgurz.gq header.s=defaultk header.b=gblYNKhq;
+       spf=temperror (google.com: error in processing during lookup of return.yzmxeznzktoz0co5mtn00sm4ctmwqtmyitm@jxmmgurz.gq: DNS error) smtp.mailfrom=return.YzMxEzNzkTOz0CO5MTN00SM4cTMwQTMyITM@jxmmgurz.gq
+Return-Path: <return.YzMxEzNzkTOz0CO5MTN00SM4cTMwQTMyITM@jxmmgurz.gq>
+Received: from 2a0394e01733010a274c381900000001.aniquiry.us (2a0394e01733010a274c381900000001.jxmmgurz.gq. [2a03:94e0:1733:10a:274c:3819:0:1])
+        by mx.google.com with ESMTPS id d8-20020a05620a240800b006af20f7de66si3547653qkn.75.2022.07.15.18.20.26
+        for <giritharram005@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 15 Jul 2022 18:20:27 -0700 (PDT)
+Received-SPF: temperror (google.com: error in processing during lookup of return.yzmxeznzktoz0co5mtn00sm4ctmwqtmyitm@jxmmgurz.gq: DNS error) client-ip=2a03:94e0:1733:10a:274c:3819:0:1;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@jxmmgurz.gq header.s=defaultk header.b=gblYNKhq;
+       spf=temperror (google.com: error in processing during lookup of return.yzmxeznzktoz0co5mtn00sm4ctmwqtmyitm@jxmmgurz.gq: DNS error) smtp.mailfrom=return.YzMxEzNzkTOz0CO5MTN00SM4cTMwQTMyITM@jxmmgurz.gq
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=jxmmgurz.gq;
+ q=dns/txt; s=defaultk; bh=HiBYfg0W2cBk211w4B+qSvbqH0crylFZWjZXjb/u6cs=;
+ h=from:subject:to:mime-version:content-type:content-transfer-encoding;
+ b=gblYNKhqfGWh9usQ00H7hfPhlLf9LgduPVYriAE0xt/YGfgk/yUHLOkD7yc/xKzN8+P/g1ImErTI
+ MZ57iyOoIAaq1ARE18I6crqha0UwjdqcecjG3UnMMQ9VY02AXy8uQsAbdZFPKQfwZh8F3r51tOc9
+ SpIgQSYKglEHib6BPdg=
+ 86.66.185.155
+Date: Sat, 16 Jul 2022 00:40:52 GMT
+Message-Id: <8aea7f40d0aea7635b298e75939a30@zlcnk2t5i14dxf.w274c-3819.aniquiry.us>
+From: "'LeafFilter Partner'"
+ <mlf45398@zlcnk2t5i14dxf.w274c-3819.aniquiry.us>
+To: giritharram005@gmail.com
+Subject: Your LeafFilter offer has arrived! 15% off plus an additional $100
+ plus financing that best fits your budget
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+ 5.255.99.205
+         185.220.100.254
+         94.230.208.147
+         185.220.101.186
+         jump1ng.net
+         http://mayketdostyabisiighe.tk/
+02sms.in
+hole.cert.pl
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <div bgcolor=3D=22#f0f2ea=22 style=3D=22 padding: 0 0 100px 0;margin: =
+0; background-color:#f0f2ea; font-size: 14px;width:100%; =
+min-width:620px;=22><center>
+      <table cellpadding=3D=220=22 cellspacing=3D=220=22 style=3D=22width: =
+600px;font-size: 14px; font-family: sans-serif; margin:0 auto;  =22>
+        <tbody>
+          <tr>
+            <td style=3D=22text-align: center;background-color:#fff; =22><a=
+ href=3D=22http://zlcnk2t5i14dxf.w274c-3819.aniquiry.=
+us/=3Fc1=3Dctzp8AANjGAADdnM4Xzp6mm7A&amp;c51=3Dan6879270=22 style=3D=22 =
+text-decoration:none; display: inline-block;=22><img alt=3D=22=22 =
+src=3D=22http://zlcnk2t5i14dxf.w274c-3819.aniquiry.us/img-ctzp8AANjGAADdnM4=
+Xzp6mm7A/logo=5F6256e41815f4a.png=22 width=3D=22197=22 height=3D=2285=22 =
+/></a>
+            </td>
+          </tr>
+          <tr>
+            <td style=3D=22background-color: #00853e; text-align: center; =
+color: #ffffff; padding:10px;=22><a href=3D=22http://zlcnk2t5i14dxf.=
+w274c-3819.aniquiry.us/=3Fc1=3Dctzp8AANjGAADdnM4Xzp6mm7A&amp;c51=3Dow195685=
+5=22 style=3D=22 text-decoration:none; display: inline-block; color: =
+#ffffff; font-weight:bold;  font-size: 2em;line-height:1;=22>Rated the #1 =
+Gutter Protection System </a>
+            </td>
+          </tr>
+          <tr>
+            <td style=3D=22background-color:#D5EFFC; min-height:100px;  =
+text-align: center;=22><a href=3D=22http://zlcnk2t5i14dxf.w274c-3819.=
+aniquiry.us/=3Fc1=3Dctzp8AANjGAADdnM4Xzp6mm7A&amp;c51=3Dui9198552=22 =
+style=3D=22 text-decoration:none; display: inline-block;=22><img =
+alt=3D=22=22 src=3D=22http://zlcnk2t5i14dxf.w274c-3819.aniquiry.=
+us/img-ctzp8AANjGAADdnM4Xzp6mm7A/mlftop.jpg=22 width=3D=22600=22 =
+height=3D=22auto=22 style=3D=22height:auto;with:600px;=22 /></a>
+              <p style=3D=22font-size: 3.1em; line-height: 1; =
+font-weight:bold; color: #333333;padding:30px 0 0 0;  margin:0;=22>Clog =
+Free&nbsp;Forever &mdash;
+              </p>
+              <p style=3D=22font-size: 3.1em; line-height: 1; =
+font-weight:bold; color: #333333;padding:10px 0 30px 0; margin:0; =
+=22>Guaranteed
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style=3D=22background-color:#D5EFFC;=22><center>
+              <table cellpadding=3D=220=22 cellspacing=3D=220=22 =
+style=3D=22background-color:#03843E;width:460px;margin:0 auto;=22 =
+width=3D=22460=22>
+                <tbody>
+                  <tr>
+                    <td style=3D=22text-align: center;padding:30px 0 20px =
+0;=22><a href=3D=22http://zlcnk2t5i14dxf.w274c-3819.aniquiry.=
+us/=3Fc1=3Dctzp8AANjGAADdnM4Xzp6mm7A&amp;c51=3Dmj5220818=22 =
+style=3D=22text-decoration:none;line-height: 1; font-size: 1.9em; =
+font-weight:bold; color: #ffffff;=22>YOUR SPECIAL OFFER<img alt=3D=22=22 =
+src=3D=22http://zlcnk2t5i14dxf.w274c-3819.aniquiry.us/img-ctzp8AANjGAADdnM4=
+Xzp6mm7A/mlfline.png=22 width=3D=22456=22 height=3D=2216=22 =
+style=3D=22display:block;=22 /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table cellpadding=3D=220=22 cellspacing=3D=220=22 =
+style=3D=22background-color:#03843E;width:100%;=22>
+                        <tbody>
+                          <tr>
+                            <td style=3D=22vertical-align:top;text-align:ce=
+nter;width:42%;=22>
+                              <p style=3D=22color:#fff;line-height:1;font-s=
+ize:5.4em;margin:0;padding:0;font-weight:bold;=22>15%
+                              </p>
+                            </td>
+                            <td style=3D=22text-align:center;width:6%;=22>
+                              <p style=3D=22color:#fff;line-height:1;font-s=
+ize:3em;margin:0;padding:0;font-weight:bold;=22>+
+                              </p>
+                            </td>
+                            <td style=3D=22text-align:center;width:42%;=22>=
+
+                              <p style=3D=22color:#fff;line-height:1;font-s=
+ize:5.4em;margin:0;padding:0;font-weight:bold;=22><sup =
+style=3D=22font-size:0.5em;=22>$</sup>100
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style=3D=22vertical-align:top;text-align:ce=
+nter;=22>
+                              <p style=3D=22color:#fff;line-height:1;font-s=
+ize:1.8em;margin:0;padding:0;font-weight:bold;=22>DISCOUNT
+                              </p>
+                            </td>
+                            <td>&nbsp;
+                            </td>
+                            <td style=3D=22text-align:center;=22>
+                              <p style=3D=22color:#fff;line-height:1;font-s=
+ize:1.8em;margin:0;padding:0;font-weight:bold;=22>OFF
+                              </p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style=3D=22text-align: center;font-size: 1.8em; =
+line-height: 1; font-weight:normal; color: #ffffff;padding:30px 10px 10px =
+10px;letter-spacing:1px;=22>Seniors and military receive
+                      <br />an additional 10% off
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style=3D=22background-color:#03843E; text-align: =
+center; vertical-align:top; padding:30px;=22><a href=3D=22http://zlcnk2t5i1=
+4dxf.w274c-3819.aniquiry.us/=3Fc1=3Dctzp8AANjGAADdnM4Xzp6mm7A&amp;c51=3Dvl8=
+207104=22 style=3D=22 text-decoration:none; display: inline-block; =
+background-color: #ef643d; color: #ffffff;font-size: 1.4em;line-height:1; =
+font-weight: bold; border-radius:5px; padding: 20px 44px;=22>Get your FREE =
+estimate</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table></center>
+            </td>
+          </tr>
+          <tr>
+            <td style=3D=22background-color:#D5EFFC; text-align:center; =
+color: #333333; font-size: 1.9em;line-height:1; padding-top:16px; =22><a =
+href=3D=22http://zlcnk2t5i14dxf.w274c-3819.aniquiry.=
+us/=3Fc1=3Dctzp8AANjGAADdnM4Xzp6mm7A&amp;c51=3Dja2479619=22 style=3D=22 =
+text-decoration:none; display: inline-block;=22><img alt=3D=22=22 =
+src=3D=22http://zlcnk2t5i14dxf.w274c-3819.aniquiry.us/img-ctzp8AANjGAADdnM4=
+Xzp6mm7A/mlfwrrnt.gif=22 width=3D=22230=22 height=3D=22170=22 =
+style=3D=22height:auto;min-height:100px;with:230px;=22 /></a>
+              <p style=3D=22padding: 15px; margin: 0px;  font-size: 1.=
+4em;line-height:1;  font-weight: bold;=22>LIFETIME WARRANTY
+              </p>
+              <p style=3D=22padding: 3px; margin: 0px;=22>With our lifetime=
+, transferable warranty, you&#39;ll
+              </p>
+              <p style=3D=22padding: 5px; margin: 0px;=22>enjoy the peace =
+of mind that your gutters and
+              </p>
+              <p style=3D=22padding: 3px; margin: 0px; padding-bottom: =
+50px;=22>entire home are protected for life.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style=3D=22text-align: center; =22><a =
+href=3D=22http://zlcnk2t5i14dxf.w274c-3819.aniquiry.=
+us/=3Fc1=3Dctzp8AANjGAADdnM4Xzp6mm7A&amp;c51=3Dsv8363803=22 style=3D=22 =
+text-decoration:none; display: inline-block;=22><img alt=3D=22=22 =
+src=3D=22http://zlcnk2t5i14dxf.w274c-3819.aniquiry.us/img-ctzp8AANjGAADdnM4=
+Xzp6mm7A/lfbtlogos.jpg=22 width=3D=22600=22 height=3D=22107=22 /></a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table align=3D=22center=22 border=3D=220=22 =
+cellpadding=3D=220=22 cellspacing=3D=220=22 style=3D=22font-family:Arial, =
+Helvetica, sans-serif; font-size:10px; text-align:center; =
+padding-top:20px;=22 width=3D=22600=22>
+                <tbody>
+                  <tr>
+                    <td align=3D=22center=22>=F0=9D=98=9B=F0=9D=98=A9=
+=F0=9D=98=AA=F0=9D=98=B4 =F0=9D=98=AA=F0=9D=98=B4 =F0=9D=98=A2=F0=9D=98=AF =
+=F0=9D=98=A2=F0=9D=98=A5=F0=9D=98=B7=F0=9D=98=A6=F0=9D=98=B3=F0=9D=98=B5=
+=F0=9D=98=AA=F0=9D=98=B4=F0=9D=98=A6=F0=9D=98=AE=F0=9D=98=A6=F0=9D=98=AF=
+=F0=9D=98=B5. =F0=9D=98=9B=F0=9D=98=A9=F0=9D=98=AA=F0=9D=98=B4 =
+=F0=9D=98=AE=F0=9D=98=A6=F0=9D=98=B4=F0=9D=98=B4=F0=9D=98=A2=F0=9D=98=A8=
+=F0=9D=98=A6 =F0=9D=98=A9=F0=9D=98=A2=F0=9D=98=B4 =F0=9D=98=A3=
+=F0=9D=98=A6=F0=9D=98=A6=F0=9D=98=AF =F0=9D=98=B4=F0=9D=98=A6=F0=9D=98=AF=
+=F0=9D=98=B5 =F0=9D=98=B5=F0=9D=98=B0 =F0=9D=98=BA=F0=9D=98=B0=F0=9D=98=B6 =
+=F0=9D=98=B5=F0=9D=98=A9=F0=9D=98=B3=F0=9D=98=B0=F0=9D=98=B6=F0=9D=98=A8=
+=F0=9D=98=A9 =F0=9D=98=A2=F0=9D=98=AF =F0=9D=98=A2=F0=9D=98=A7=
+=F0=9D=98=A7=F0=9D=98=AA=F0=9D=98=AD=F0=9D=98=AA=F0=9D=98=A2=F0=9D=98=B5=
+=F0=9D=98=A6.
+                      <br />=F0=9D=98=9B=F0=9D=98=B0 =
+=F0=9D=98=A3=F0=9D=98=A6 =F0=9D=98=B3=F0=9D=98=A6=F0=9D=98=AE=F0=9D=98=B0=
+=F0=9D=98=B7=F0=9D=98=A6=F0=9D=98=A5 =F0=9D=98=A7=F0=9D=98=B3=F0=9D=98=B0=
+=F0=9D=98=AE =F0=9D=98=B3=F0=9D=98=A6=F0=9D=98=A4=F0=9D=98=A6=F0=9D=98=AA=
+=F0=9D=98=B7=F0=9D=98=AA=F0=9D=98=AF=F0=9D=98=A8 =F0=9D=98=A7=F0=9D=98=B6=
+=F0=9D=98=B5=F0=9D=98=B6=F0=9D=98=B3=F0=9D=98=A6 =F0=9D=98=A6=F0=9D=98=AE=
+=F0=9D=98=A2=F0=9D=98=AA=F0=9D=98=AD=F0=9D=98=B4, <a =
+href=3D=22http://zlcnk2t5i14dxf.w274c-3819.aniquiry.=
+us/=3Fc1=3Dctzp8AANjGAADdnM4Xzp6mm7A&amp;c2=3Dunsub&amp;c51=3Dpc4294734=22 =
+style=3D=22font-style: normal; font-weight: normal; text-decoration: =
+underline;=22 target=3D=22=5Fblank=22>=F0=9D=98=9C=F0=9D=98=AF=
+=F0=9D=98=B4=F0=9D=98=B6=F0=9D=98=A3=F0=9D=98=B4=F0=9D=98=A4=F0=9D=98=B3=
+=F0=9D=98=AA=F0=9D=98=A3=F0=9D=98=A6 =F0=9D=98=A9=F0=9D=98=A6=F0=9D=98=B3=
+=F0=9D=98=A6</a>.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table align=3D=22center=22 border=3D=220=22 =
+cellpadding=3D=220=22 cellspacing=3D=220=22 style=3D=22font-family:Arial, =
+Helvetica, sans-serif; font-size:12px; text-align:center; =
+padding-top:20px;=22 width=3D=22600=22>
+                <tbody>
+                  <tr>
+                    <td align=3D=22center=22>=F0=9D=98=8A=F0=9D=98=B0=
+=F0=9D=98=AF=F0=9D=98=B7=F0=9D=98=A6=F0=9D=98=B3=F0=9D=98=A8=F0=9D=98=A6 =
+=F0=9D=98=8B=F0=9D=98=AA=F0=9D=98=B3=F0=9D=98=A6=F0=9D=98=A4=F0=9D=98=B5 =
+=F0=9D=98=93=F0=9D=98=93=F0=9D=98=8A | 2 =F0=9D=98=8B=F0=9D=98=A6=
+=F0=9D=98=B1=F0=9D=98=B0=F0=9D=98=B5 =F0=9D=98=97=F0=9D=98=AD=F0=9D=98=A2=
+=F0=9D=98=BB=F0=9D=98=A2, =F0=9D=98=9A=F0=9D=98=B6=F0=9D=98=AA=
+=F0=9D=98=B5=F0=9D=98=A6 401 =F0=9D=98=89=F0=9D=98=A6=F0=9D=98=A5=
+=F0=9D=98=A7=F0=9D=98=B0=F0=9D=98=B3=F0=9D=98=A5 =F0=9D=98=8F=F0=9D=98=AA=
+=F0=9D=98=AD=F0=9D=98=AD=F0=9D=98=B4, =F0=9D=98=95=F0=9D=98=A0 10507
+                      <br />&nbsp;
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table></center>
+    </div><center>
+    <div style=3D=22min-height:104px;height:184px;margin:55px;=22>&nbsp;<im=
+g alt=3D=22=22 border=3D=220=22 src=3D=22http://zlcnk2t5i14dxf.w274c-3819.=
+aniquiry.us/ctzp8AANjGAADdnM4Xzp6mm7A/t.gif=22 style=3D=22height:1px;width:=
+1px;=22 />
+    </div>
+    <p><a href=3D=22http://zlcnk2t5i14dxf.w274c-3819.aniquiry.=
+us/=3Fc1=3Dctzp8AANjGAADdnM4Xzp6mm7A&amp;c2=3Dpref&amp;c51=3Dxj2980956=22><=
+img alt=3D=22=22 src=3D=22http://zlcnk2t5i14dxf.w274c-3819.aniquiry.=
+us/img-ctzp8AANjGAADdnM4Xzp6mm7A/rmvaddr.gif=22 width=3D=22314=22 =
+height=3D=2226=22 /></a>
+    </p></center>
+  </body>
+</html>
