@@ -1,0 +1,4 @@
+colorama
+prettytable
+python-nmap
+python-whois
